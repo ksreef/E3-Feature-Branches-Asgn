@@ -5,7 +5,7 @@ const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 const face = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 face.setAttribute("viewBox", "0 0 200 200");
 face.setAttribute("role", "img");
-face.setAttribute("aria-label", "A neutral face");
+face.setAttribute("aria-label", "fuzzy face");
 
 const head = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
 head.setAttribute("cx", "100");
@@ -58,6 +58,20 @@ mouth.setAttribute("stroke", "#302c29");
 mouth.setAttribute("stroke-width", "4");
 mouth.setAttribute("stroke-linecap", "round");
 face.append(mouth);
+
+//100 short lines for fur
+for (let i = 0; i < 100; i++) {
+  const angle = (i / 100) * Math.PI * 2;
+  const fur = document.createElementNS("http://www.w3.org/2000/svg", "line");
+  fur.setAttribute("x1", String(100 + 78 * Math.cos(angle)));
+  fur.setAttribute("y1", String(100 + 86 * Math.sin(angle)));
+  fur.setAttribute("x2", String(100 + 90 * Math.cos(angle)));
+  fur.setAttribute("y2", String(100 + 98 * Math.sin(angle)));
+  fur.setAttribute("stroke", "#a9794a");
+  fur.setAttribute("stroke-width", "2");
+  fur.setAttribute("stroke-linecap", "round");
+  face.append(fur);
+}
 
 portrait.append(face);
 
