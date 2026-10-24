@@ -31,3 +31,9 @@ Explored on branch 'C'
 ## one line to choose
 
 suits a sad character who's been through tough times
+
+## Decision
+
+I chose branch C, head shaded from gray to blue with a curved frown.
+
+My criterion was that he portrait should suit a sad character who has been through tough times. C fit this best because the gray to blue gradient gives a sad feel, like a rainy day. The curved frown just makes it that much more literally sad. Branch A remains on its own branch, feeling playful and friendly. Branch B remains on its own branch as well, coming out sort of adventurous.
